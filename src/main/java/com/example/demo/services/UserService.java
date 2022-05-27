@@ -13,4 +13,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    public List<UserEntity> find(){
+        return userRepository.findAll();
+    }
+
 }
